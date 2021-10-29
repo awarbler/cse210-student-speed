@@ -3,12 +3,13 @@ from game import constants
 from game.actor import Actor
 from game.point import Point
 
-class Food(Actor):
+class Word(Actor):
     """A nutritious substance that snake's like. The responsibility of Food is to keep track of its appearance and position. A Food can move around randomly if asked to do so. 
     
     Stereotype:
         Information Holder
-    Attributes: 
+    Attributes:
+        _word_list (list): List of all active words 
         _points (integer): The number of points the food is worth.
     """
     def __init__(self):
@@ -21,7 +22,7 @@ class Food(Actor):
         """
         super().__init__()
         self._points = 0
-        self.set_text("@")
+        self.set_text(random.choice(constants.LIBRARY))
         self.reset()
     
     def get_points(self):
