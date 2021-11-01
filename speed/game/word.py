@@ -28,9 +28,9 @@ class Word(Actor):
         """
         super().__init__()
         self._points = 0 # sets the points 
-        self.set_text("")
+        self.set_text(random.choice(constants.LIBRARY))
         self.reset()
-        self._word= constants.Library[i]
+
 
     
     def get_points(self):
