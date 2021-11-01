@@ -46,19 +46,15 @@ class Word(Actor):
     def get_text(self):
         pass
 
-    def check_word():
+    def check_word(self, word):
         #loop through the range of words
-        # set text equal to self._words at current index
+        # set text equal to self.checkWord at current index
         # if letter. get_letter() is equal to word
             # call the set points funtion and pass the current word
             # set the current word to a new random word 
             # return points
         #return 0
-
-
-        pass
-
-
+        return self.set_text == word
 
     def reset(self):
         """Resets the word by moving it to a random position within the boundaries of the screen and reassigning the points to a random number.

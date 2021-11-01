@@ -9,7 +9,7 @@ class Buffer:
         self.guess_list = []
         self.x = 50
         self.dashes = "-"*self.x
-  
+
 
     def make_list(self,user_input):#adds user input to list of guesses
         self.guess_list.add(user_input)
@@ -23,4 +23,3 @@ class Buffer:
     def clear_buffer(self):#clears list to restart buffer if player hits enter
         self.x = 50
         self.guess_list.clear()
-       
