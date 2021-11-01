@@ -4,6 +4,9 @@ from game.point import Point
 # Buffer-lyfe--zach
 
 class Buffer:
+   """ The responsibility of Buffer is to keep track of the players letters.
+    Stereotype:
+        Information Holder"""
 
     def __init__(self):
         self.guess_list = []
@@ -11,15 +14,18 @@ class Buffer:
         self.dashes = "-"*self.x
 
 
-    def make_list(self,user_input):#adds user input to list of guesses
+    def make_list(self,user_input):
+        #adds user input to list of guesses
         self.guess_list.add(user_input)
         self.x -= 1
         return self.guess_list
 
-    def display_buffer(self):#prints buffer "Buffer: (guess_list in string form) (correct amount of dashes)"
+    def display_buffer(self):
+        #prints buffer "Buffer: (guess_list in string form) (correct amount of dashes)"
         print(f"-Buffer: {''.join(str(i) for i in self.guess_list)}{self.dashes}")
 
 
-    def clear_buffer(self):#clears list to restart buffer if player hits enter
+    def clear_buffer(self):
+        #clears list to restart buffer if player hits enter
         self.x = 50
         self.guess_list.clear()
