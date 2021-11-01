@@ -5,7 +5,6 @@ from game.score import Score
 from game.buffer import Buffer
 import random
 
-from speed.game import buffer
 
 
 class Director:
