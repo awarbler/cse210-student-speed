@@ -41,3 +41,6 @@ root                    (project root folder)
 ## Authors
 ---
 * # TODO: Add names and emails here
+Anita awoodfor@byui.edu
+Xander 
+Zach
